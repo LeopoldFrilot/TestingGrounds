@@ -8,7 +8,7 @@ namespace Buffer
     public class InputBufferSystem : MonoBehaviour
     {
         Inputs inputs;
-        [SerializeField] [Range(3,15)] int maxBufferSize = 10;
+        [SerializeField] [Range(3,30)] int maxBufferSize = 10;
         public List<List<BufferItem>> buffer = new List<List<BufferItem>>();
         List<string> watchlist = new List<string>();
 
@@ -80,7 +80,7 @@ namespace Buffer
             //Find the first instance where the input occurs in the buffer, but is not yet used
             for (int i = 0; i < buffer.Count; i++)
             {
-                for (int j = 2; j < buffer[i].Count; j++)
+                for (int j = 0; j < buffer[i].Count; j++)
                 {
                     BufferItem curItem = buffer[i][j];
                     if (!foundFlag)

@@ -1,0 +1,1978 @@
+fileFormatVersion: 2
+guid: d615719603ea11446a601aca18aaaa9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4754905619624141915
+    second: Fighting Game Assets_0
+  - first:
+      213: 6491358043334251178
+    second: Fighting Game Assets_1
+  - first:
+      213: -2330824123915473365
+    second: Fighting Game Assets_2
+  - first:
+      213: 2925024713515450749
+    second: Fighting Game Assets_3
+  - first:
+      213: -5300696419090439446
+    second: Fighting Game Assets_4
+  - first:
+      213: -121371734051592283
+    second: Fighting Game Assets_5
+  - first:
+      213: -3218116822998598244
+    second: Fighting Game Assets_6
+  - first:
+      213: 6809775505058914803
+    second: Fighting Game Assets_7
+  - first:
+      213: 36804635077583025
+    second: Fighting Game Assets_8
+  - first:
+      213: -5689453708450610361
+    second: Fighting Game Assets_9
+  - first:
+      213: 51660453912407778
+    second: Fighting Game Assets_10
+  - first:
+      213: -6197633166842451612
+    second: Fighting Game Assets_11
+  - first:
+      213: 2158021491200360421
+    second: Fighting Game Assets_12
+  - first:
+      213: -405622246053050912
+    second: Fighting Game Assets_13
+  - first:
+      213: -5423327081817977516
+    second: Fighting Game Assets_14
+  - first:
+      213: 9119090568504453377
+    second: Fighting Game Assets_15
+  - first:
+      213: -632407310566870843
+    second: Fighting Game Assets_16
+  - first:
+      213: 8303245182891185412
+    second: Fighting Game Assets_17
+  - first:
+      213: 2435889268364544529
+    second: Fighting Game Assets_18
+  - first:
+      213: -5350120465271539096
+    second: Fighting Game Assets_19
+  - first:
+      213: 7344873889115687205
+    second: Fighting Game Assets_20
+  - first:
+      213: 9077906177108346627
+    second: Fighting Game Assets_21
+  - first:
+      213: -642393162618213828
+    second: Fighting Game Assets_22
+  - first:
+      213: -5453474662838609642
+    second: Fighting Game Assets_23
+  - first:
+      213: 4064572716720804868
+    second: Fighting Game Assets_24
+  - first:
+      213: -2572855027278566207
+    second: Fighting Game Assets_25
+  - first:
+      213: -2851700309108040109
+    second: Fighting Game Assets_26
+  - first:
+      213: -8223912974688852485
+    second: Fighting Game Assets_27
+  - first:
+      213: -3565983266293117274
+    second: Fighting Game Assets_28
+  - first:
+      213: 7893480532719244800
+    second: Fighting Game Assets_29
+  - first:
+      213: -6759672416751692426
+    second: Fighting Game Assets_30
+  - first:
+      213: -968479670020241509
+    second: Fighting Game Assets_31
+  - first:
+      213: -6810640896010788673
+    second: Fighting Game Assets_32
+  - first:
+      213: -1790127476412391049
+    second: Fighting Game Assets_33
+  - first:
+      213: 5689365920425886278
+    second: Fighting Game Assets_34
+  - first:
+      213: -8194711996072186415
+    second: Fighting Game Assets_35
+  - first:
+      213: 5145528716177319847
+    second: Fighting Game Assets_36
+  - first:
+      213: 1219189157117132986
+    second: Fighting Game Assets_37
+  - first:
+      213: -7967621043212127891
+    second: Fighting Game Assets_38
+  - first:
+      213: -4240185468638230973
+    second: Fighting Game Assets_39
+  - first:
+      213: 8371338851091392081
+    second: Fighting Game Assets_40
+  - first:
+      213: -8876438149142436971
+    second: Fighting Game Assets_41
+  - first:
+      213: 2818839891476388271
+    second: Fighting Game Assets_42
+  - first:
+      213: 7495976040738861927
+    second: Fighting Game Assets_43
+  - first:
+      213: 650458620669727702
+    second: Fighting Game Assets_44
+  - first:
+      213: -6546829585386911978
+    second: Fighting Game Assets_45
+  - first:
+      213: 7647924828644955705
+    second: Fighting Game Assets_46
+  - first:
+      213: -4184004580201828901
+    second: Fighting Game Assets_47
+  - first:
+      213: 5266768261809912871
+    second: Fighting Game Assets_48
+  - first:
+      213: -4865059429101937345
+    second: Fighting Game Assets_49
+  - first:
+      213: 599163956474759440
+    second: Fighting Game Assets_50
+  - first:
+      213: -7991274098128474487
+    second: Fighting Game Assets_51
+  - first:
+      213: 7961691869601064009
+    second: Fighting Game Assets_52
+  - first:
+      213: 3183961583486669515
+    second: Fighting Game Assets_53
+  - first:
+      213: -6283823726398689342
+    second: Fighting Game Assets_54
+  - first:
+      213: -8702163942357974774
+    second: Fighting Game Assets_55
+  - first:
+      213: 2740369677240177037
+    second: Fighting Game Assets_56
+  - first:
+      213: 1085299193593861389
+    second: Fighting Game Assets_57
+  - first:
+      213: 1611754089094768442
+    second: Fighting Game Assets_58
+  - first:
+      213: 4032014327603133427
+    second: Fighting Game Assets_59
+  - first:
+      213: -2841499801003581513
+    second: Fighting Game Assets_60
+  - first:
+      213: 1450810590959136985
+    second: Fighting Game Assets_61
+  - first:
+      213: 6919470348904084550
+    second: Fighting Game Assets_62
+  - first:
+      213: -7956740413507892265
+    second: Fighting Game Assets_63
+  - first:
+      213: -6371334872763334082
+    second: Fighting Game Assets_64
+  - first:
+      213: 7123457358771751242
+    second: Fighting Game Assets_65
+  - first:
+      213: -6036066199433920110
+    second: Fighting Game Assets_66
+  - first:
+      213: -4250777096615796947
+    second: Fighting Game Assets_67
+  - first:
+      213: -3305340376042425623
+    second: Fighting Game Assets_68
+  - first:
+      213: -6879178657612936449
+    second: Fighting Game Assets_69
+  - first:
+      213: -6531966822005420971
+    second: Fighting Game Assets_70
+  - first:
+      213: -5021119044709203330
+    second: Fighting Game Assets_71
+  - first:
+      213: -4731126819752330792
+    second: Fighting Game Assets_72
+  - first:
+      213: -901738718413172490
+    second: Fighting Game Assets_73
+  - first:
+      213: -3496273186435676192
+    second: Fighting Game Assets_74
+  - first:
+      213: 3454638620185284279
+    second: Fighting Game Assets_75
+  - first:
+      213: 8223338420004645549
+    second: Fighting Game Assets_76
+  - first:
+      213: -3373616320294796602
+    second: Fighting Game Assets_77
+  - first:
+      213: 6172315607610856702
+    second: Fighting Game Assets_78
+  - first:
+      213: -7456519330457417424
+    second: Fighting Game Assets_79
+  - first:
+      213: 5930253189632930836
+    second: Fighting Game Assets_80
+  - first:
+      213: 6970602164721695109
+    second: Fighting Game Assets_81
+  - first:
+      213: 3440080432360072139
+    second: Fighting Game Assets_82
+  - first:
+      213: -3318884963673801239
+    second: Fighting Game Assets_83
+  - first:
+      213: -2008031816990588099
+    second: Fighting Game Assets_84
+  - first:
+      213: 2768676403220507531
+    second: Fighting Game Assets_85
+  - first:
+      213: 4628154356868412780
+    second: Fighting Game Assets_86
+  - first:
+      213: 1880428759387559904
+    second: Fighting Game Assets_87
+  - first:
+      213: -4176022747218744395
+    second: Fighting Game Assets_88
+  - first:
+      213: 7561017409803226190
+    second: Fighting Game Assets_89
+  - first:
+      213: -1048679502805719848
+    second: Fighting Game Assets_90
+  - first:
+      213: -7305701323098656961
+    second: Fighting Game Assets_91
+  - first:
+      213: -6552813229641122872
+    second: Fighting Game Assets_92
+  - first:
+      213: -770749116265863569
+    second: Fighting Game Assets_93
+  - first:
+      213: -3566518618845560159
+    second: Fighting Game Assets_94
+  - first:
+      213: 1853685122486953293
+    second: Fighting Game Assets_95
+  - first:
+      213: 1571553381189222439
+    second: Fighting Game Assets_96
+  - first:
+      213: -8359243913537386500
+    second: Fighting Game Assets_97
+  - first:
+      213: 4828692285061499367
+    second: Fighting Game Assets_98
+  - first:
+      213: -4648632883076025256
+    second: Fighting Game Assets_99
+  - first:
+      213: 1099833698457019592
+    second: Fighting Game Assets_100
+  - first:
+      213: 2581894746253305190
+    second: Fighting Game Assets_101
+  - first:
+      213: -6349856657115529395
+    second: Fighting Game Assets_102
+  - first:
+      213: 3083488750644972334
+    second: Fighting Game Assets_103
+  - first:
+      213: -1659419433417721072
+    second: Fighting Game Assets_104
+  - first:
+      213: 7186308424520160548
+    second: Fighting Game Assets_105
+  - first:
+      213: -355161735450303606
+    second: Fighting Game Assets_106
+  - first:
+      213: 957208345624248607
+    second: Fighting Game Assets_107
+  - first:
+      213: -454296408111912464
+    second: Fighting Game Assets_108
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fighting Game Assets_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab5bc1188e230eb0800000000000000
+      internalID: -4754905619624141915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa210da6fbfe51a50800000000000000
+      internalID: 6491358043334251178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e6b1cfecf37afd0800000000000000
+      internalID: -2330824123915473365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71c350ca76c79820800000000000000
+      internalID: 2925024713515450749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2edede0b42076b0800000000000000
+      internalID: -5300696419090439446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_5
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7e41a0d0dc05ef0800000000000000
+      internalID: -121371734051592283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_6
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9db57fbcc3f653d0800000000000000
+      internalID: -3218116822998598244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_7
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1613bfdbe218e50800000000000000
+      internalID: 6809775505058914803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b023efde91c28000800000000000000
+      internalID: 36804635077583025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_9
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743c5c50ffffa01b0800000000000000
+      internalID: -5689453708450610361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_10
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee626cb8e887b000800000000000000
+      internalID: 51660453912407778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_11
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4692d22a8759df9a0800000000000000
+      internalID: -6197633166842451612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_12
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eff7a0dc15d2fd10800000000000000
+      internalID: 2158021491200360421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_13
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5030f57b0fe5af0800000000000000
+      internalID: -405622246053050912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_14
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45dcb7bc0c87cb4b0800000000000000
+      internalID: -5423327081817977516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_15
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109a25a9e848d8e70800000000000000
+      internalID: 9119090568504453377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c03d44d6ec3937f0800000000000000
+      internalID: -632407310566870843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_17
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405d339508d0b3370800000000000000
+      internalID: 8303245182891185412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_18
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a0e0932640ec120800000000000000
+      internalID: 2435889268364544529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_19
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 240.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a31f178cd80c5b0800000000000000
+      internalID: -5350120465271539096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52948c823eb3ee560800000000000000
+      internalID: 7344873889115687205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3070ede32933bfd70800000000000000
+      internalID: 9077906177108346627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_22
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a600872d2c517f0800000000000000
+      internalID: -642393162618213828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_23
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61959e910bd5154b0800000000000000
+      internalID: -5453474662838609642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_24
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40453efc953486830800000000000000
+      internalID: 4064572716720804868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_25
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccab78fbf16b4cd0800000000000000
+      internalID: -2572855027278566207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_26
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e5eb58da9bc68d0800000000000000
+      internalID: -2851700309108040109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_27
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5e1ffb8bacedd80800000000000000
+      internalID: -8223912974688852485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_28
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae8c99dc15138ec0800000000000000
+      internalID: -3565983266293117274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_29
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006113a19b64b8d60800000000000000
+      internalID: 7893480532719244800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_30
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675528150c1d032a0800000000000000
+      internalID: -6759672416751692426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_31
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9781401fd44f82f0800000000000000
+      internalID: -968479670020241509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_32
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0678c703ebb71a0800000000000000
+      internalID: -6810640896010788673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_33
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771e5c17b803827e0800000000000000
+      internalID: -1790127476412391049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_34
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642c23c3920b4fe40800000000000000
+      internalID: 5689365920425886278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_35
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd2c756bd8864e80800000000000000
+      internalID: -8194711996072186415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_36
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7225dea17986740800000000000000
+      internalID: 5145528716177319847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_37
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab089ff241e6be010800000000000000
+      internalID: 1219189157117132986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_38
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 160.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61f96e10e25d6190800000000000000
+      internalID: -7967621043212127891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3468b0028c5d725c0800000000000000
+      internalID: -4240185468638230973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_40
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156aab1f458fc2470800000000000000
+      internalID: 8371338851091392081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_41
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593a3a1688e80d480800000000000000
+      internalID: -8876438149142436971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_42
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9962a42f78e1720800000000000000
+      internalID: 2818839891476388271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76334116e7e070860800000000000000
+      internalID: 7495976040738861927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_44
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d31c125ba4e60900800000000000000
+      internalID: 650458620669727702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_45
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617cefdbd2df425a0800000000000000
+      internalID: -6546829585386911978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_46
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936d5487c13e22a60800000000000000
+      internalID: 7647924828644955705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_47
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd667a800e6fe5c0800000000000000
+      internalID: -4184004580201828901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_48
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c3b7f54d1571940800000000000000
+      internalID: 5266768261809912871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_49
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dd635b936db7cb0800000000000000
+      internalID: -4865059429101937345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_50
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01945e3a178a05800800000000000000
+      internalID: 599163956474759440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_51
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ea54e1c8a491190800000000000000
+      internalID: -7991274098128474487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_52
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944efa2929c9d7e60800000000000000
+      internalID: 7961691869601064009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_53
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2963ad034bf2c20800000000000000
+      internalID: 3183961583486669515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_54
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfa5dc2d9f5bc8a0800000000000000
+      internalID: -6283823726398689342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_55
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a014a8e1004bb3780800000000000000
+      internalID: -8702163942357974774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_56
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81172dc3bfb70620800000000000000
+      internalID: 2740369677240177037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_57
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d051e2dcdd1cf0f00800000000000000
+      internalID: 1085299193593861389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_58
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 80.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37e6c9fdc91e5610800000000000000
+      internalID: 1611754089094768442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbf11e1ba794f730800000000000000
+      internalID: 4032014327603133427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_60
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf96d36cf6f098d0800000000000000
+      internalID: -2841499801003581513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_61
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d07e76bb80522410800000000000000
+      internalID: 1450810590959136985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_62
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644b6441f95e60060800000000000000
+      internalID: 6919470348904084550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_63
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db0ed220caf39190800000000000000
+      internalID: -7956740413507892265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_64
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3202e3a0b87497a0800000000000000
+      internalID: -6371334872763334082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_65
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a498b32e9ba9bd260800000000000000
+      internalID: 7123457358771751242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_66
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291cff5a5c59b3ca0800000000000000
+      internalID: -6036066199433920110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_67
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f59d090c43205c0800000000000000
+      internalID: -4250777096615796947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_68
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e23c30c0721122d0800000000000000
+      internalID: -3305340376042425623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_69
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa4886557f3880a0800000000000000
+      internalID: -6879178657612936449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_70
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ccab188cac955a0800000000000000
+      internalID: -6531966822005420971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_71
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72c825f4d6615ab0800000000000000
+      internalID: -5021119044709203330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighting Game Assets_72
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 0.75
+        width: 75.25
+        height: 80.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9b6595939a75eb0800000000000000
+      internalID: -4731126819752330792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7ef8e5d6deae3ae42941a36b01cc5b50
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

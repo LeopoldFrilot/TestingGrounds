@@ -24,10 +24,18 @@ namespace Buffer
                     if (j == 0)
                     {
                         frameOutput = string.Format("({0}, ", buffer[i][j].inputName);
+                        if (buffer[i][j].used)
+                        {
+                            frameOutput = string.Format("{0}*", frameOutput);
+                        }
                     }
                     else if (j == 1)
                     {
                         frameOutput = string.Format("{0}{1}) ", frameOutput, buffer[i][j].inputName);
+                        if (buffer[i][j].used)
+                        {
+                            frameOutput = string.Format("{0}*", frameOutput);
+                        }
                     }
                     else
                     {
