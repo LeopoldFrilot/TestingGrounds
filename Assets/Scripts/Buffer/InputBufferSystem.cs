@@ -10,7 +10,7 @@ namespace Buffer
         Inputs inputs;
         [SerializeField] [Range(3,30)] int maxBufferSize = 10;
         public List<List<BufferItem>> buffer = new List<List<BufferItem>>();
-        List<string> watchlist = new List<string>();
+        private List<string> watchlist = new List<string>();
 
         // UNIQUE ATTRIBUTES
         private float _horizontal, _vertical, _jump, _dash, _lightAttack, _mediumAttack, _heavyAttack;

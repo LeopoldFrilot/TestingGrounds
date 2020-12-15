@@ -11,17 +11,22 @@ public class PlayerController : MonoBehaviour
     List<List<string[]>> specialInputList;
 
     public float horizSpeed = 3f;
+    public float jumpHeight;
     private float xMove;
     private float yMove;
     private float yStore; // Used for jumps and gravity purposes
     public string curDirectionalOption;
     [SerializeField] string prevDirectionalOption;
     [SerializeField] string prevPrevDirectionalOption;
+
+    public Animator animator;
+
+
     public void Start()
     {
         buffer = GetComponent<InputBufferSystem>();
         inputs = new FightingGameInputs();
-
+        animator = GetComponent<Animator>();
         // Make character face right
         FlipCharacterRight();
     }
@@ -32,18 +37,36 @@ public class PlayerController : MonoBehaviour
 
         if (buffer)
         {
+            // Horizontal Movement
             if (buffer.buffer[0][0].inputName == "Right")
             {
                 xMove += Time.deltaTime * horizSpeed;
+                animator.SetBool("IsRunning", true);
+                FlipCharacterRight();
             }
             else if (buffer.buffer[0][0].inputName == "Left")
             {
                 xMove -= Time.deltaTime * horizSpeed;
+                animator.SetBool("IsRunning", true);
+                FlipCharacterLeft();
             }
+            else
+            {
+                animator.SetBool("IsRunning", false);
+            }
+
+            // Other Actions
+            var options = buffer.GetUnusedOptions();
+            if (options.Contains("Jump"))
+            {
+                GetComponent<AerialOptions>().Jump();
+                buffer.UseOption("Jump");
+            }
+
         }
 
         CheckNormalInputs();
-
+    
         transform.position += new Vector3(xMove, 0, 0);
     }
 
@@ -90,14 +113,14 @@ public class PlayerController : MonoBehaviour
         else potentialInput = "Neutral";
         if(potentialInput != curDirectionalOption)
         {
-            Debug.Log(curDirectionalOption);
+            //Debug.Log(curDirectionalOption);
             prevPrevDirectionalOption = prevDirectionalOption;
             prevDirectionalOption = curDirectionalOption;
             curDirectionalOption = potentialInput;
         }
     }
 
-    private void UpdateFacingDirection()
+    public void UpdateFacingDirection()
     {
         if (gameObject.transform.localScale.x > 0) // Characters are facing left by default
         {

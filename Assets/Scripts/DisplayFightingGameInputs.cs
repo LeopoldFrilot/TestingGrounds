@@ -39,7 +39,13 @@ public class DisplayFightingGameInputs : MonoBehaviour
     public void Update()
     {
         if (transform.childCount >= historyLength) Destroy(transform.GetChild(0).gameObject); // Cull children
-        if(PC.curDirectionalOption != prevInput)
+        PopulateDirection();
+
+    }
+
+    private void PopulateDirection()
+    {
+        if (PC.curDirectionalOption != prevInput)
         {
             GameObject newInput = Instantiate(buttonPrefab, transform);
             Image inputImage = newInput.transform.GetChild(0).GetComponent<Image>();
@@ -87,6 +93,5 @@ public class DisplayFightingGameInputs : MonoBehaviour
             }
             prevInput = PC.curDirectionalOption;
         }
-
     }
 }
