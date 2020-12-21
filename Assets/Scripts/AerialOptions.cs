@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Buffer;
 
 public class AerialOptions : MonoBehaviour
 {
@@ -11,9 +12,12 @@ public class AerialOptions : MonoBehaviour
     public float groundHeight = -76f;
     public float groundedThreshold = .001f;
     PlayerController PC;
+    //InputBufferSystem buffer;
+
     private void Start()
     {
         PC = GetComponent<PlayerController>();
+        //buffer = GetComponent<InputBufferSystem>();
     }
     // Update is called once per frame
     void Update()
@@ -27,14 +31,13 @@ public class AerialOptions : MonoBehaviour
             
             if (resultantHeight == apex)
             {
-                Debug.Log("apex");
                 isJumping = false;
             }
             transform.position = new Vector3(transform.position.x, resultantHeight, 0);
         }
         else
         {
-            float resultantHeight = Mathf.Lerp(storeHeight, groundHeight, .9f);
+            float resultantHeight = transform.position.y - gravity;
 
             transform.position = new Vector3(transform.position.x, resultantHeight, 0);
         }
@@ -47,12 +50,6 @@ public class AerialOptions : MonoBehaviour
     {
         if (Mathf.Abs(transform.position.y - groundHeight) < groundedThreshold)
         {
-            /*
-            if (isAerial)
-            {
-                isJumping = false;
-            }
-            */
             isAerial = false;
             PC.animator.SetBool("IsAerial", false);
         }
@@ -63,15 +60,15 @@ public class AerialOptions : MonoBehaviour
         }
     }
 
-    public void Jump()
+    public bool Jump()
     {
-        
         if (!isAerial) // No double jumps
         {
-            
             isJumping = true;
             apex = transform.position.y + PC.jumpHeight;
+            return true;
         }
+        return false;
     }
     private void ApplyGravity()
     {

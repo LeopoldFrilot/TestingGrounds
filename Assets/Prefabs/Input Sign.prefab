@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 5609316539247103744}
   - component: {fileID: 5609316539247103774}
   - component: {fileID: 5609316539247103775}
+  - component: {fileID: -5544943089841861077}
   m_Layer: 5
   m_Name: Input Sign
   m_TagString: Untagged
@@ -151,3 +152,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-5544943089841861077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5609316539247103745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48efb470d0d09804dac545d8805eb63b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  downShift: 30
+  lifetime: 0

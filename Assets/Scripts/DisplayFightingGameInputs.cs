@@ -32,18 +32,34 @@ public class DisplayFightingGameInputs : MonoBehaviour
 
     PlayerController PC;
     string prevInput;
+    public List<GameObject> inputList;
+    private List<string> prevActionList;
+    private List<string> actionList;
     public void Start()
     {
         PC = FindObjectOfType<PlayerController>();
     }
     public void Update()
     {
-        if (transform.childCount >= historyLength) Destroy(transform.GetChild(0).gameObject); // Cull children
-        PopulateDirection();
-
+        if (transform.childCount >= historyLength)
+        {
+            Destroy(transform.GetChild(0).gameObject); // Cull children
+        }
+        bool res1 = PopulateDirection();
+        bool res2 = PopulateActions();
+        if(res1 || res2)
+        {
+            var inputs = transform.GetComponentsInChildren<InputSign>();
+            Debug.Log(inputs.Length);
+            foreach(InputSign input in inputs)
+            {
+                Debug.Log("Hi");
+                input.DownShift();
+            }
+        }
     }
 
-    private void PopulateDirection()
+    private bool PopulateDirection()
     {
         if (PC.curDirectionalOption != prevInput)
         {
@@ -91,7 +107,34 @@ public class DisplayFightingGameInputs : MonoBehaviour
                     inputImage.sprite = neutralSprite;
                     break;
             }
+            inputList.Add(newInput);
             prevInput = PC.curDirectionalOption;
+            return true;            
         }
+        return false;
+    }
+
+    private bool PopulateActions()
+    {
+        int count = 0;
+        
+        if (PC.usedInputs.Contains("Jump"))
+        {
+            if(!prevActionList.Contains("Jump"))
+            {
+                GameObject newInput = Instantiate(buttonPrefab, transform);
+                Image inputImage = newInput.transform.GetChild(0).GetComponent<Image>();
+                inputImage.sprite = jumpSprite;
+                count++;
+                newInput.GetComponent<InputSign>().LeftShift(count);
+                inputList.Add(newInput);
+            }
+            actionList.Add("Jump");
+        }
+        prevActionList = actionList;
+        actionList.Clear();
+        PC.usedInputs.Clear();
+        if (count > 0) return true;
+        return false;
     }
 }

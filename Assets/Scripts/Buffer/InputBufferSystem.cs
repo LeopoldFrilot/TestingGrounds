@@ -90,10 +90,11 @@ namespace Buffer
                             curItem.used = true;
                             foundFlag = true; // Now that it's found, set all subsequent elements to used as well
                             sequentialTracker = i;
-                            if (i == buffer.Count - 1)
-                            {
-                                watchlist.Add(inputName);
-                            }
+                            //if (i == buffer.Count - 1)
+                            //{
+                            //    watchlist.Add(inputName);
+                            //}
+                            watchlist.Add(inputName);
                         }
                     }
                     else
@@ -140,8 +141,11 @@ namespace Buffer
                 BufferItem item = new BufferItem();
                 item.val = _jump;
                 item.inputName = "Jump";
-                if (watchlist.Contains(name))
+                if (watchlist.Contains(item.inputName))
+                {
                     item.used = true;
+                }
+                    
                 frameBuffer.Add(item);
             }
         }
@@ -152,7 +156,7 @@ namespace Buffer
                 BufferItem item = new BufferItem();
                 item.val = _dash;
                 item.inputName = "Dash";
-                if (watchlist.Contains(name))
+                if (watchlist.Contains(item.inputName))
                     item.used = true;
                 frameBuffer.Add(item);
             }
@@ -164,7 +168,7 @@ namespace Buffer
                 BufferItem item = new BufferItem();
                 item.val = _lightAttack;
                 item.inputName = "LightAttack";
-                if (watchlist.Contains(name))
+                if (watchlist.Contains(item.inputName))
                     item.used = true;
                 frameBuffer.Add(item);
             }
@@ -176,7 +180,7 @@ namespace Buffer
                 BufferItem item = new BufferItem();
                 item.val = _mediumAttack;
                 item.inputName = "MediumAttack";
-                if (watchlist.Contains(name))
+                if (watchlist.Contains(item.inputName))
                     item.used = true;
                 frameBuffer.Add(item);
             }
@@ -188,7 +192,7 @@ namespace Buffer
                 BufferItem item = new BufferItem();
                 item.val = _heavyAttack;
                 item.inputName = "HeavyAttack";
-                if (watchlist.Contains(name))
+                if (watchlist.Contains(item.inputName))
                     item.used = true;
                 frameBuffer.Add(item);
             }

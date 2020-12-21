@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     private float yMove;
     private float yStore; // Used for jumps and gravity purposes
     public string curDirectionalOption;
+    public List<string> usedInputs;
+    public bool gettingInputs = true;
     [SerializeField] string prevDirectionalOption;
     [SerializeField] string prevPrevDirectionalOption;
 
@@ -57,12 +59,13 @@ public class PlayerController : MonoBehaviour
 
             // Other Actions
             var options = buffer.GetUnusedOptions();
+
             if (options.Contains("Jump"))
             {
-                GetComponent<AerialOptions>().Jump();
-                buffer.UseOption("Jump");
+                bool result = GetComponent<AerialOptions>().Jump();
+                if (result) buffer.UseOption("Jump");
+                usedInputs.Add("Jump");
             }
-
         }
 
         CheckNormalInputs();
