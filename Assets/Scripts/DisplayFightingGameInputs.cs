@@ -32,12 +32,13 @@ public class DisplayFightingGameInputs : MonoBehaviour
 
     PlayerController PC;
     string prevInput;
-    public List<GameObject> inputList;
-    private List<string> prevActionList;
-    private List<string> actionList;
+    public List<string> prevActionList;
+    public List<string> actionList;
     public void Start()
     {
         PC = FindObjectOfType<PlayerController>();
+        prevActionList.Add("");
+        actionList.Add("");
     }
     public void Update()
     {
@@ -50,10 +51,8 @@ public class DisplayFightingGameInputs : MonoBehaviour
         if(res1 || res2)
         {
             var inputs = transform.GetComponentsInChildren<InputSign>();
-            Debug.Log(inputs.Length);
             foreach(InputSign input in inputs)
             {
-                Debug.Log("Hi");
                 input.DownShift();
             }
         }
@@ -107,7 +106,6 @@ public class DisplayFightingGameInputs : MonoBehaviour
                     inputImage.sprite = neutralSprite;
                     break;
             }
-            inputList.Add(newInput);
             prevInput = PC.curDirectionalOption;
             return true;            
         }
@@ -120,18 +118,18 @@ public class DisplayFightingGameInputs : MonoBehaviour
         
         if (PC.usedInputs.Contains("Jump"))
         {
-            if(!prevActionList.Contains("Jump"))
+            if(prevActionList != null && !prevActionList.Contains("Jump"))
             {
                 GameObject newInput = Instantiate(buttonPrefab, transform);
                 Image inputImage = newInput.transform.GetChild(0).GetComponent<Image>();
                 inputImage.sprite = jumpSprite;
                 count++;
                 newInput.GetComponent<InputSign>().LeftShift(count);
-                inputList.Add(newInput);
             }
             actionList.Add("Jump");
         }
-        prevActionList = actionList;
+        prevActionList.Clear();
+        foreach(var action in actionList) { prevActionList.Add(action); }
         actionList.Clear();
         PC.usedInputs.Clear();
         if (count > 0) return true;

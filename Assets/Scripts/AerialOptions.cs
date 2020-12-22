@@ -12,12 +12,10 @@ public class AerialOptions : MonoBehaviour
     public float groundHeight = -76f;
     public float groundedThreshold = .001f;
     PlayerController PC;
-    //InputBufferSystem buffer;
 
     private void Start()
     {
         PC = GetComponent<PlayerController>();
-        //buffer = GetComponent<InputBufferSystem>();
     }
     // Update is called once per frame
     void Update()
@@ -27,8 +25,7 @@ public class AerialOptions : MonoBehaviour
         if (isJumping)
         {
             float resultantHeight = Mathf.Lerp(storeHeight, apex, .1f);
-            if (apex - resultantHeight < 3f) resultantHeight = apex;
-            
+            if (apex - resultantHeight < 3f) resultantHeight = apex; // threshold of 3 to reach the apex of the jump
             if (resultantHeight == apex)
             {
                 isJumping = false;
@@ -41,7 +38,6 @@ public class AerialOptions : MonoBehaviour
 
             transform.position = new Vector3(transform.position.x, resultantHeight, 0);
         }
-        
         if (transform.position.y < groundHeight) transform.position = new Vector3(transform.position.x, groundHeight, 0);
         UpdateGroundedState();
     }
@@ -69,9 +65,5 @@ public class AerialOptions : MonoBehaviour
             return true;
         }
         return false;
-    }
-    private void ApplyGravity()
-    {
-        transform.position -= new Vector3(0, gravity, 0);
     }
 }
