@@ -34,13 +34,14 @@ public class DisplayFightingGameInputs : MonoBehaviour
     string prevInput;
     public List<string> prevActionList;
     public List<string> actionList;
+
     public void Start()
     {
         PC = FindObjectOfType<PlayerController>();
         prevActionList.Add("");
         actionList.Add("");
     }
-    public void Update()
+    public void LateUpdate()
     {
         if (transform.childCount >= historyLength)
         {
@@ -48,8 +49,10 @@ public class DisplayFightingGameInputs : MonoBehaviour
         }
         bool res1 = PopulateDirection();
         bool res2 = PopulateActions();
+        
         if(res1 || res2)
         {
+            if (res1 && res2) Debug.Log("Combo");
             var inputs = transform.GetComponentsInChildren<InputSign>();
             foreach(InputSign input in inputs)
             {
@@ -115,10 +118,9 @@ public class DisplayFightingGameInputs : MonoBehaviour
     private bool PopulateActions()
     {
         int count = 0;
-        
         if (PC.usedInputs.Contains("Jump"))
         {
-            if(prevActionList != null && !prevActionList.Contains("Jump"))
+            if(!prevActionList.Contains("Jump"))
             {
                 GameObject newInput = Instantiate(buttonPrefab, transform);
                 Image inputImage = newInput.transform.GetChild(0).GetComponent<Image>();
@@ -129,7 +131,7 @@ public class DisplayFightingGameInputs : MonoBehaviour
             actionList.Add("Jump");
         }
         prevActionList.Clear();
-        foreach(var action in actionList) { prevActionList.Add(action); }
+        foreach(string action in actionList) { prevActionList.Add(action); }
         actionList.Clear();
         PC.usedInputs.Clear();
         if (count > 0) return true;

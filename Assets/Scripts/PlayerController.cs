@@ -13,16 +13,12 @@ public class PlayerController : MonoBehaviour
     public float horizSpeed = 3f;
     public float jumpHeight;
     private float xMove;
-    private float yMove;
-    private float yStore; // Used for jumps and gravity purposes
     public string curDirectionalOption;
     public List<string> usedInputs;
-    public bool gettingInputs = true;
     [SerializeField] string prevDirectionalOption;
     [SerializeField] string prevPrevDirectionalOption;
 
     public Animator animator;
-
 
     public void Start()
     {
@@ -37,6 +33,7 @@ public class PlayerController : MonoBehaviour
         xMove = 0f;
         UpdateFacingDirection();
 
+        CheckNormalInputs();
         if (buffer)
         {
             // Horizontal Movement
@@ -67,8 +64,7 @@ public class PlayerController : MonoBehaviour
                 usedInputs.Add("Jump");
             }
         }
-
-        CheckNormalInputs();
+        
     
         transform.position += new Vector3(xMove, 0, 0);
     }

@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Buffer;
 
 public class AerialOptions : MonoBehaviour
 {
     public bool isAerial;
     private bool isJumping = false;
     private float apex;
-    public float gravity = .2f;
+    public float gravity = 800f;
     public float groundHeight = -76f;
-    public float groundedThreshold = .001f;
+    public float groundedThreshold = .5f;
     PlayerController PC;
 
     private void Start()
@@ -24,7 +23,7 @@ public class AerialOptions : MonoBehaviour
 
         if (isJumping)
         {
-            float resultantHeight = Mathf.Lerp(storeHeight, apex, .1f);
+            float resultantHeight = Mathf.Lerp(storeHeight, apex, 10f * Time.deltaTime);
             if (apex - resultantHeight < 3f) resultantHeight = apex; // threshold of 3 to reach the apex of the jump
             if (resultantHeight == apex)
             {
@@ -34,7 +33,7 @@ public class AerialOptions : MonoBehaviour
         }
         else
         {
-            float resultantHeight = transform.position.y - gravity;
+            float resultantHeight = transform.position.y - gravity * Time.deltaTime;
 
             transform.position = new Vector3(transform.position.x, resultantHeight, 0);
         }

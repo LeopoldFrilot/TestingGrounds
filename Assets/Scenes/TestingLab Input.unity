@@ -231,7 +231,8 @@ MonoBehaviour:
   lightAttackSprite: {fileID: -4754905619624141915, guid: d615719603ea11446a601aca18aaaa9c, type: 3}
   mediumAttackSprite: {fileID: 6491358043334251178, guid: d615719603ea11446a601aca18aaaa9c, type: 3}
   heavyAttackSprite: {fileID: -2330824123915473365, guid: d615719603ea11446a601aca18aaaa9c, type: 3}
-  inputList: []
+  prevActionList: []
+  actionList: []
 --- !u!1 &515542850
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,7 +616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAerial: 0
-  gravity: 4.5
+  gravity: 800
   groundHeight: -76
   groundedThreshold: 0.5
 --- !u!1 &963194225
