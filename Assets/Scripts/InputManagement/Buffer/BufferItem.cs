@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace Buffer
+namespace InputManagement.Buffer
 {
     public class BufferItem
     {

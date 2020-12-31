@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using Buffer;
+using InputManagement;
+using InputManagement.Buffer;
 
 public class PlayerController : MonoBehaviour
 {
@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     }
     public void Update()
     {
+        usedInputs.Clear();
         xMove = 0f;
         UpdateFacingDirection();
 
@@ -62,6 +63,26 @@ public class PlayerController : MonoBehaviour
                 bool result = GetComponent<AerialOptions>().Jump();
                 if (result) buffer.UseOption("Jump");
                 usedInputs.Add("Jump");
+            }
+            if (options.Contains("Dash"))
+            {
+                //buffer.UseOption("Dash");
+                usedInputs.Add("Dash");
+            }
+            if (options.Contains("LightAttack"))
+            {
+                //buffer.UseOption("LightAttack");
+                usedInputs.Add("LightAttack");
+            }
+            if (options.Contains("MediumAttack"))
+            {
+                //buffer.UseOption("MediumAttack");
+                usedInputs.Add("MediumAttack");
+            }
+            if (options.Contains("HeavyAttack"))
+            {
+                //buffer.UseOption("HeavyAttack");
+                usedInputs.Add("HeavyAttack");
             }
         }
         

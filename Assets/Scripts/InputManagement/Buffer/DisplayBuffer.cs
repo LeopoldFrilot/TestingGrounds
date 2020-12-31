@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Buffer
+
+namespace InputManagement.Buffer
 {
     public class DisplayBuffer : MonoBehaviour
     {
@@ -50,5 +51,6 @@ namespace Buffer
             }
             txt.text = output;
         }
+
     }
 }

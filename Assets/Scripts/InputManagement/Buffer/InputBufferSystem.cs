@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using System.IO;
+using System.Text;
 
-namespace Buffer
+namespace InputManagement.Buffer
 {
     public class InputBufferSystem : MonoBehaviour
     {
@@ -12,11 +13,20 @@ namespace Buffer
         public List<List<BufferItem>> buffer = new List<List<BufferItem>>();
         private List<string> watchlist = new List<string>();
 
+        private string prepath;
+        private string path;
+        FileStream fs;
+        StreamReader sr = null;
+        StreamWriter sw = null;
+        bool scriptPresent = false;
+        bool EOF = false;
         // UNIQUE ATTRIBUTES
         private float _horizontal, _vertical, _jump, _dash, _lightAttack, _mediumAttack, _heavyAttack;
 
         public void Awake()
         {
+            CreateText();
+
             inputs = new Inputs();
 
             inputs.InputBufferActions.Horizontal.performed += context => _horizontal = context.ReadValue<float>();
@@ -36,14 +46,33 @@ namespace Buffer
         }
         public void Update()
         {
+            ManageBuffer();
+        }
+        private void ManageBuffer()
+        {
+            if (EOF) return; // For reading purposes
             while (buffer.Count >= maxBufferSize) buffer.RemoveAt(0); // Cull buffer
+
             List<BufferItem> frameBuffer = new List<BufferItem>();
-            UpdateMovement(frameBuffer);
-            UpdateJump(frameBuffer);
-            UpdateDash(frameBuffer);
-            UpdateLightAttack(frameBuffer);
-            UpdateMediumAttack(frameBuffer);
-            UpdateHeavyAttack(frameBuffer);
+            string[] curReadInputs = null;
+            if (scriptPresent)
+            {
+                string curLine = sr.ReadLine();
+                if (curLine == "END")
+                {
+                    EOF = true;
+                    return;
+                }
+                curReadInputs = curLine.Split(' ');
+
+            }
+            UpdateMovement(frameBuffer, curReadInputs);
+            UpdateJump(frameBuffer, curReadInputs);
+            UpdateDash(frameBuffer, curReadInputs);
+            UpdateLightAttack(frameBuffer, curReadInputs);
+            UpdateMediumAttack(frameBuffer, curReadInputs);
+            UpdateHeavyAttack(frameBuffer, curReadInputs);
+
             buffer.Add(frameBuffer);
             for (int i = 0; i < watchlist.Count; i++)
             {
@@ -55,6 +84,16 @@ namespace Buffer
                 }
                 if (!found)
                     watchlist.Remove(watchlist[i]);
+            }
+            if(!scriptPresent)
+            {
+                string textToAdd = "";
+                foreach (BufferItem item in frameBuffer)
+                {
+                    string content = item.inputName + " ";
+                    textToAdd += content;
+                }
+                sw.WriteLine(textToAdd);
             }
         }
         public List<string> GetUnusedOptions()
@@ -112,9 +151,17 @@ namespace Buffer
                 }
             }
         }
-        private void UpdateMovement(List<BufferItem> frameBuffer)
+        private void UpdateMovement(List<BufferItem> frameBuffer, string[] readBuffer)
         {
             BufferItem item = new BufferItem();
+
+            if(readBuffer != null)
+            {
+                if (readBuffer[0] == "Left") _horizontal = -1;
+                else if (readBuffer[0] == "Right") _horizontal = 1;
+                else _horizontal = 0;
+            }
+
             item.val = _horizontal;
             if (_horizontal > 0)
                 item.inputName = "Right";
@@ -122,9 +169,18 @@ namespace Buffer
                 item.inputName = "Left";
             else
                 item.inputName = "Neutral";
+            
             frameBuffer.Add(item);
 
             item = new BufferItem();
+
+            if (readBuffer != null)
+            {
+                if (readBuffer[1] == "Up") _vertical = 1;
+                else if (readBuffer[1] == "Down") _vertical = -1;
+                else _vertical = 0;
+            }
+
             item.val = _vertical;
             if (_vertical > 0)
                 item.inputName = "Up";
@@ -134,11 +190,21 @@ namespace Buffer
                 item.inputName = "Neutral";
             frameBuffer.Add(item);
         }
-        private void UpdateJump(List<BufferItem> frameBuffer)
+        private void UpdateJump(List<BufferItem> frameBuffer, string[] readBuffer)
         {
+            if (readBuffer != null)
+            {
+                _jump = 0;
+                for (int i = 2; i < readBuffer.Length; i++)
+                {
+                    if (readBuffer[i] == "Jump") _jump = 1;
+                }
+            }
             if (_jump > 0)
             {
+                
                 BufferItem item = new BufferItem();
+
                 item.val = _jump;
                 item.inputName = "Jump";
                 if (watchlist.Contains(item.inputName))
@@ -149,8 +215,16 @@ namespace Buffer
                 frameBuffer.Add(item);
             }
         }
-        private void UpdateDash(List<BufferItem> frameBuffer)
+        private void UpdateDash(List<BufferItem> frameBuffer, string[] readBuffer)
         {
+            if (readBuffer != null)
+            {
+                _dash = 0;
+                for (int i = 2; i < readBuffer.Length; i++)
+                {
+                    if (readBuffer[i] == "Dash") _dash = 1;
+                }
+            }
             if (_dash > 0)
             {
                 BufferItem item = new BufferItem();
@@ -161,8 +235,16 @@ namespace Buffer
                 frameBuffer.Add(item);
             }
         }
-        private void UpdateLightAttack(List<BufferItem> frameBuffer)
+        private void UpdateLightAttack(List<BufferItem> frameBuffer, string[] readBuffer)
         {
+            if (readBuffer != null)
+            {
+                _lightAttack = 0;
+                for (int i = 2; i < readBuffer.Length; i++)
+                {
+                    if (readBuffer[i] == "LightAttack") _lightAttack = 1;
+                }
+            }
             if (_lightAttack > 0)
             {
                 BufferItem item = new BufferItem();
@@ -173,8 +255,16 @@ namespace Buffer
                 frameBuffer.Add(item);
             }
         }
-        private void UpdateMediumAttack(List<BufferItem> frameBuffer)
+        private void UpdateMediumAttack(List<BufferItem> frameBuffer, string[] readBuffer)
         {
+            if (readBuffer != null)
+            {
+                _mediumAttack = 0;
+                for (int i = 2; i < readBuffer.Length; i++)
+                {
+                    if (readBuffer[i] == "MediumAttack") _mediumAttack = 1;
+                }
+            }
             if (_mediumAttack > 0)
             {
                 BufferItem item = new BufferItem();
@@ -185,8 +275,16 @@ namespace Buffer
                 frameBuffer.Add(item);
             }
         }
-        private void UpdateHeavyAttack(List<BufferItem> frameBuffer)
+        private void UpdateHeavyAttack(List<BufferItem> frameBuffer, string[] readBuffer)
         {
+            if (readBuffer != null)
+            {
+                _heavyAttack = 0;
+                for (int i = 2; i < readBuffer.Length; i++)
+                {
+                    if (readBuffer[i] == "HeavyAttack") _heavyAttack = 1;
+                }
+            }
             if (_heavyAttack > 0)
             {
                 BufferItem item = new BufferItem();
@@ -203,7 +301,38 @@ namespace Buffer
         }
         public void OnDisable()
         {
+            if(sr != null)sr.Close();
+            if(sw != null)
+            {
+                sw.WriteLine("END");
+                sw.Close();
+                string newName = prepath + "/outBuffer_" +
+                System.DateTime.Now.Day + "-" + System.DateTime.Now.Month + "-" + System.DateTime.Now.Year + "_" +
+                System.DateTime.Now.TimeOfDay.Hours + "-" + System.DateTime.Now.TimeOfDay.Minutes + "-" + System.DateTime.Now.Second + ".txt";
+                File.Copy(path, newName);
+                File.Delete(path);
+            }
+            fs.Close();
+            
             inputs.Disable();
+        }
+        private void CreateText()
+        {
+            prepath = Application.dataPath;
+            path = prepath + "/outBuffer.txt";
+            string testPath = prepath + "/test.txt";
+            if (File.Exists(testPath))
+            {
+                fs = new FileStream(testPath, FileMode.Open, FileAccess.Read);
+                scriptPresent = true;
+                sr = new StreamReader(fs);
+            }
+            else
+            {
+                if (File.Exists(path)) File.Delete(path);
+                fs = new FileStream(path, FileMode.Append, FileAccess.Write);
+                sw = new StreamWriter(fs);
+            }
         }
     }
 }
