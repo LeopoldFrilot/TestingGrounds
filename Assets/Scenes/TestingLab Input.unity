@@ -478,6 +478,8 @@ GameObject:
   - component: {fileID: 916704848}
   - component: {fileID: 916704847}
   - component: {fileID: 916704849}
+  - component: {fileID: 916704850}
+  - component: {fileID: 916704851}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -532,6 +534,9 @@ MonoBehaviour:
   prevDirectionalOption: 
   prevPrevDirectionalOption: 
   animator: {fileID: 0}
+  isAerial: 0
+  isFacingRight: 0
+  isInLag: 0
 --- !u!212 &916704847
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -596,7 +601,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 794d139617234734d90938ad3d232df6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -614,10 +619,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c2d8b7f8ef614249a15c22e19ad88eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isAerial: 0
   gravity: 800
   groundHeight: -76
   groundedThreshold: 0.5
+  jumpApexThreshold: 3
+--- !u!114 &916704850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916704843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3246cda024d1a644b8fe0b32a45187f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashDistance: 400
+  dashTime: 5
+  dashThreshold: 2
+--- !u!114 &916704851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916704843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c975354a4d300449c824f94614e75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,7 +1209,7 @@ Canvas:
   m_GameObject: {fileID: 2060104814}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
