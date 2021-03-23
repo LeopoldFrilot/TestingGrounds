@@ -20,6 +20,7 @@ namespace InputManagement.Buffer
         StreamWriter sw = null;
         bool scriptPresent = false;
         bool EOF = false;
+
         // UNIQUE ATTRIBUTES
         private float _horizontal, _vertical, _jump, _dash, _lightAttack, _mediumAttack, _heavyAttack;
 
@@ -53,7 +54,9 @@ namespace InputManagement.Buffer
             if (EOF) return; // For reading purposes
             while (buffer.Count >= maxBufferSize) buffer.RemoveAt(0); // Cull buffer
 
-            List<BufferItem> frameBuffer = new List<BufferItem>();
+            List<BufferItem> frameBuffer = new List<BufferItem>(); // Initialize current frame's buffer
+
+            // If character is using inputs from a script, the frame's inputs are populated
             string[] curReadInputs = null;
             if (scriptPresent)
             {
@@ -66,14 +69,17 @@ namespace InputManagement.Buffer
                 curReadInputs = curLine.Split(' ');
 
             }
+
+            // Check through all possible inputs and adds them to the frame buffer in this order
             UpdateMovement(frameBuffer, curReadInputs);
             UpdateJump(frameBuffer, curReadInputs);
             UpdateDash(frameBuffer, curReadInputs);
             UpdateLightAttack(frameBuffer, curReadInputs);
             UpdateMediumAttack(frameBuffer, curReadInputs);
             UpdateHeavyAttack(frameBuffer, curReadInputs);
-
             buffer.Add(frameBuffer);
+
+            // Watchlist makes it so that held inputs don't constantly register as new inputs
             for (int i = 0; i < watchlist.Count; i++)
             {
                 bool found = false;
@@ -85,6 +91,8 @@ namespace InputManagement.Buffer
                 if (!found)
                     watchlist.Remove(watchlist[i]);
             }
+
+            // If no script is present, it writes the frame's buffer to a log that will become a new script in the OnDisable()
             if(!scriptPresent)
             {
                 string textToAdd = "";
@@ -153,8 +161,7 @@ namespace InputManagement.Buffer
         }
         private void UpdateMovement(List<BufferItem> frameBuffer, string[] readBuffer)
         {
-            BufferItem item = new BufferItem();
-
+            // If the player is set to operate off a script, the script will give the inputs rather than player input
             if(readBuffer != null)
             {
                 if (readBuffer[0] == "Left") _horizontal = -1;
@@ -162,6 +169,7 @@ namespace InputManagement.Buffer
                 else _horizontal = 0;
             }
 
+            BufferItem item = new BufferItem();
             item.val = _horizontal;
             if (_horizontal > 0)
                 item.inputName = "Right";
@@ -172,8 +180,7 @@ namespace InputManagement.Buffer
             
             frameBuffer.Add(item);
 
-            item = new BufferItem();
-
+            // Movement always has two input buffer items: horizontal and vertical
             if (readBuffer != null)
             {
                 if (readBuffer[1] == "Up") _vertical = 1;
@@ -181,6 +188,7 @@ namespace InputManagement.Buffer
                 else _vertical = 0;
             }
 
+            item = new BufferItem();
             item.val = _vertical;
             if (_vertical > 0)
                 item.inputName = "Up";
