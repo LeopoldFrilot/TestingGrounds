@@ -15,11 +15,23 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_Data:
     m_SerializedData: []
-  m_GUID: 2df1ee5812a49104aad46fede626e5ab
-  m_SerializeEntries: []
+  m_GUID: 7e9d2f1fe843adc4fabdfd5caf5eaad8
+  m_SerializeEntries:
+  - m_GUID: 3164b1d9ce0fab34ebd6bd10b9ac4a23
+    m_Address: Assets/Prefabs/Addressables/Test Crate.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f736f2644ccadf54a91f48f3ac8a575c
+    m_Address: Assets/Prefabs/Addressables/Test Sphere.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
-  m_Settings: {fileID: 11400000, guid: 5c7a1571a40fda94fbb8880ffc901fe7, type: 2}
+  m_Settings: {fileID: 11400000, guid: c5df23ad68c0135478d6fd0d94d217ca, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 69fc1374a271be34b8c2cf9d0dd6f897, type: 2}
-    - {fileID: 11400000, guid: 354efc5611acbe845900d3a90fa6eb3f, type: 2}
+    - {fileID: 11400000, guid: 40d9d505595961b4d85e4c16fd9053c5, type: 2}
+    - {fileID: 11400000, guid: f00b474a472a2e94bb7b5d91acb4b357, type: 2}
